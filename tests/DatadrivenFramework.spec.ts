@@ -4,20 +4,20 @@ import { HomePage } from "../pages/HomePage";
 import { LogoutPage } from "../pages/LogoutPage";
 import fs from 'fs'
 
-// test('AddToCart', async ({ page }) => {
-//     test.setTimeout(120000);
-//     const testdata = JSON.parse(fs.readFileSync('./Testdata.json', 'utf8'))
-//     for (const data of testdata) {
-//     const loginPage: LoginPage = new LoginPage(page)
+ test('AddToCart', async ({ page }) => {
+     test.setTimeout(120000);
+     const testdata = JSON.parse(fs.readFileSync('./Testdata.json', 'utf8'))
+     for (const data of testdata) {
+     const loginPage: LoginPage = new LoginPage(page)
 //     await page.goto('https://www.saucedemo.com/')
 //     await loginPage.login(data.username,data.password)
 //     const homePage: HomePage = new HomePage(page)
 //     await homePage.addRemove()
 //     const logoutPage: LogoutPage = new LogoutPage(page)
 //     await logoutPage.logout()
-//     }
-//     await page.close();
-// })
+     }
+     await page.close();
+ })
 
 test('AddToCarte', async ({ page }) => {
     test.setTimeout(60000)
